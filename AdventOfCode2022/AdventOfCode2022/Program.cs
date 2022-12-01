@@ -1,7 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AdventOfCode2022.DayCode;
 
-Console.WriteLine("Hello, Santa's little helper! Welcome! Please make sure input file is present in the same file as the binary in the format 'dayX.in'");
+Console.WriteLine($"Hello, Elf #{Guid.NewGuid()}! Welcome to our expedition into the Star Grove! " +
+    "\nYou have been trusted with comms and intel support for this mission." +
+    "\nTime to get those star fruits so the reindeer can be ULTRAFAST!" +
+    "\n\nPlease make sure input file is present in the same file as the binary in the format 'dayX.in'");
 Console.WriteLine("Please enter the day number: ");
 string input = Console.ReadLine() ?? "invalid";
 
