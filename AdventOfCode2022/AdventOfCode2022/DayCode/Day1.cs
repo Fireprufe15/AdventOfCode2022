@@ -8,10 +8,9 @@ namespace AdventOfCode2022.DayCode
 {
     class Day1: IDayCode
     {
-        public void RunDay()
+        public void RunDay(string input)
         {
-            string text = File.ReadAllText(Environment.CurrentDirectory + "\\Inputs\\day1.in");
-            string[] elves = text.Split("\n\n");
+            string[] elves = input.Split("\n\n");
 
             // Get elves total calories
             List<int> elveTotals = elves.Select(elve => elve.Split('\n').Select(line => int.Parse(line)).Sum()).ToList();

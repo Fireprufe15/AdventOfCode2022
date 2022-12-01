@@ -5,7 +5,7 @@ Console.WriteLine("Hello, Santa's little helper! Welcome! Please make sure input
 Console.WriteLine("Please enter the day number: ");
 int day = int.Parse(Console.ReadLine());
 
-var typeName = typeof(Day1).FullName;
+string text = File.ReadAllText(Environment.CurrentDirectory + $"\\Input\\day{day}.in").Trim();
 var type = Type.GetType("AdventOfCode2022.DayCode.Day" + day.ToString());
 IDayCode dayCode = (IDayCode)Activator.CreateInstance(type);
-dayCode.RunDay();
+dayCode.RunDay(text);

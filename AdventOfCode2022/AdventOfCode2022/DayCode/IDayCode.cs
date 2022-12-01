@@ -8,6 +8,6 @@ namespace AdventOfCode2022.DayCode
 {
     internal interface IDayCode
     {
-        public void RunDay();
+        public void RunDay(string input);
     }
 }
