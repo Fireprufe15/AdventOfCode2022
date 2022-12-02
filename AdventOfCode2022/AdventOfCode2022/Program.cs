@@ -9,7 +9,8 @@ Console.WriteLine("Please enter the day number: ");
 string input = Console.ReadLine() ?? "invalid";
 
 int day;
-if (input == null || string.IsNullOrEmpty(input) || !int.TryParse(input, out day)) {
+if (input == null || string.IsNullOrEmpty(input) || !int.TryParse(input, out day))
+{
     Console.WriteLine($"Bad input! Stopping...");
     Console.ReadLine();
     return;
