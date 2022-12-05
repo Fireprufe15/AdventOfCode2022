@@ -23,7 +23,7 @@ if (!File.Exists(Environment.CurrentDirectory + $"\\Input\\day{day}.in"))
     return;
 }
 
-string text = File.ReadAllText(Environment.CurrentDirectory + $"\\Input\\day{day}.in").Trim();
+string text = File.ReadAllText(Environment.CurrentDirectory + $"\\Input\\day{day}.in").TrimEnd();
 var type = Type.GetType("AdventOfCode2022.DayCode.Day" + day.ToString());
 
 if (type == null)
